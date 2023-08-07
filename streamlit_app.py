@@ -5,21 +5,17 @@ import streamlit as st
 
 
 
-#st.set_page_config("MESS","graphics\mess_logo.png" , layout="wide")
+st.set_page_config(page_title='MESS - The Multi Energy System Symulator',  layout='wide', page_icon=':ambulance:')
 
-#import streamlit as st
+#this is the header
+ 
 
-st.set_page_config(
-    page_title="MESS",
-    page_icon="graphics\mess_logo.png",
-    layout="wide",
-    initial_sidebar_state="expanded",
-    menu_items={
-        'Get Help': 'https://www.extremelycoolapp.com/help',
-        'Report a bug': "https://www.extremelycoolapp.com/bug",
-        'About': "# This is a header. This is an *extremely* cool app!"
-    }
-)
+t1, t2 = st.columns((0.07,1)) 
+
+t1.image('graphics/mess_logo.png', width = 120)
+t2.title("MESS - The Multi Energy System Symulator")
+t2.markdown(" **tel:** 01392 451192 **| website:** https://www.swast.nhs.uk **| email:** mailto:data.science@swast.nhs.uk")
+
 
 # Display the logo image in the header
 #logo_path = "graphics\mess_logo.png"  # Path to your logo image file
