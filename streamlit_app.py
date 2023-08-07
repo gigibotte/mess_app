@@ -1,13 +1,16 @@
-"""
-# My first app
-Here's our first attempt at using data to create a table:
-"""
-
 import streamlit as st
-import pandas as pd
-df = pd.DataFrame({
-  'first column': [1, 2, 3, 4],
-  'second column': [10, 20, 30, 40]
-})
 
-df
+# Set page configuration and add a title to the app
+st.beta_set_page_config(
+    page_title="MESS",
+    page_icon="graphics\mess_logo.png",
+    layout="wide"
+)
+
+# Display the logo image in the header
+logo_path = "graphics\mess_logo.png"  # Path to your logo image file
+st.image(logo_path, use_column_width=True)
+
+# Continue building the rest of your Streamlit app content below the header
+# For example, you can add text, input widgets, charts, etc.
+st.write("Welcome to your Streamlit app!")
