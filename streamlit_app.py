@@ -10,11 +10,11 @@ st.set_page_config(page_title='MESS - The Multi Energy System Symulator',  layou
 #this is the header
  
 
-t1, t2 = st.columns((0.07,1)) 
+t1, t2, t3 = st.columns((0.2,0.1,1)) 
 
 t1.image('graphics/mess_logo.png', width = 120)
-t2.title("MESS - The Multi Energy System Symulator")
-t2.markdown(" **tel:** 01392 451192 **| website:** https://www.swast.nhs.uk **| email:** mailto:data.science@swast.nhs.uk")
+t3.title("MESS - The Multi Energy System Symulator")
+t3.markdown(" **tel:** 01392 451192 **| website:** https://www.swast.nhs.uk **| email:** mailto:data.science@swast.nhs.uk")
 
 
 # Display the logo image in the header
