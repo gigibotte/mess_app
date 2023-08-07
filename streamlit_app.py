@@ -3,9 +3,23 @@ import streamlit as st
 # Set page configuration and add a title to the app
 #st.set_page_config(page_title="MESS Model", layout="wide")
 
-st.set_page_config("MESS","graphics\mess_logo.png" , layout="wide")
 
 
+#st.set_page_config("MESS","graphics\mess_logo.png" , layout="wide")
+
+#import streamlit as st
+
+st.set_page_config(
+    page_title="MESS",
+    page_icon="graphics\mess_logo.png",
+    layout="wide",
+    initial_sidebar_state="expanded",
+    menu_items={
+        'Get Help': 'https://www.extremelycoolapp.com/help',
+        'Report a bug': "https://www.extremelycoolapp.com/bug",
+        'About': "# This is a header. This is an *extremely* cool app!"
+    }
+)
 
 # Display the logo image in the header
 #logo_path = "graphics\mess_logo.png"  # Path to your logo image file
