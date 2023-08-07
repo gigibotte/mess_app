@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Set page configuration and add a title to the app
-st.beta_set_page_config(
+st.set_page_config(
     page_title="MESS",
     page_icon="graphics\mess_logo.png",
     layout="wide"
